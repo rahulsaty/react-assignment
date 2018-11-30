@@ -1,0 +1,42 @@
+
+
+.card {
+    min-width: auto;
+    min-height: auto;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 4px 6px 0 blue, 0 6px 20px 0 chocolate;
+    background-image: linear-gradient(to top,rgba(255, 255, 255, 0.8), rgba(128, 128, 128, 0.8)); 
+  
+}
+
+.parent {
+     position:absolute; top:0; bottom:0; right:0; left:0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url("../resource/star-wars.jpg")
+  }
+
+.button {
+    min-width: 120px;
+    min-height: 60px;
+    margin-top: 40px;
+    margin-right: 20px;  
+   }
+
+.textField {
+    margin-top: 50px;
+     
+   }
+.input{
+    color: "white"
+   }
+.header {
+    margin-top: 10px;   
+   }
+.progress {
+     margin-right: 20px;
+   }
+
+  

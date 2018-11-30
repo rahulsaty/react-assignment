@@ -1,0 +1,14 @@
+.list {
+    position: absolute;; top:0; bottom:0; right:0; left:0;
+    display: grid;
+	justify-content: center;
+	background-image: url("../resource/listbg.jpg") ;
+    }
+   
+   .inputForm{
+       height: 50px; font-size: 15px;
+       align-content: center;
+       align-self: center;
+	   margin-top: 10px;   width: 400px;
+    }
+   
