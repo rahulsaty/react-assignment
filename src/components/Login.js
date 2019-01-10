@@ -25,7 +25,7 @@ class Login extends Component {
  
     if(localStorage.getItem('login')=="true" )
     {
-      browserHistory.push('/test')
+      browserHistory.push('/planets')
     }
   }
 
@@ -46,7 +46,7 @@ class Login extends Component {
         loading: true
       });
 
-      fetch("https://swapi.co/api/people/")
+      fetch("https://swapi.co/api/people/?search="+this.state.name)
         .then(response => response.json())
         .then(data => {
           console.log(data.results);
@@ -59,7 +59,9 @@ class Login extends Component {
               });
               alert("Successfully Login!!!");
               localStorage.setItem('login', true);
-              browserHistory.push('/test')
+              localStorage.setItem('user', this.state.name);
+              localStorage.setItem('gender', data.results[i].gender);
+              browserHistory.push('/planets')
               console.log(browserHistory)
               break;
             }

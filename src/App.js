@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Planet from './components/Planet';
 import Login from './components/Login'
@@ -43,7 +42,7 @@ class App extends Component {
       <Router history={browserHistory}>
         <div className="App">
           <Route path='/' component={Loginpage} />
-          < PrivateRoute  path='/test' component={Planetpage}  />
+          < PrivateRoute  path='/planets' component={Planetpage}  />
         </div>
       </Router>
     );

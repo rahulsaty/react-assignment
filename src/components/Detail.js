@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import {getColor} from "./Utils"
 import "./Detail.css";
 
 
@@ -18,8 +18,12 @@ class Detail extends Component {
     const data = this.props.value;
 
     return (
-      <div className={this.props.show ? "modal display-block" : "modal display-none"}>
-        <div className="modal-main">
+      <div className={this.props.show ? "modal display-block" : "modal display-none"} >
+        <div className="modal-main" style={{
+       
+       background: getColor(data.population),
+     
+     }}>
           <tbody>
             <tr>
               <td><b>Name</b></td>
